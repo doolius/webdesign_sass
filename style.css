@@ -1,0 +1,145 @@
+header {
+  background-image: url("img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-bottom: 41.25%;
+}
+header div img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10%;
+  width: 50%;
+}
+
+body {
+  width: 70%;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  background-color: #C8E2F1;
+}
+main div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin: 2%;
+  color: #FFFFFF;
+}
+main div img {
+  width: 30%;
+}
+
+section {
+  display: flex;
+}
+section aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1%;
+  color: #FFFFFF;
+}
+
+.lorem_ipsum {
+  background-color: #E0EEF6;
+}
+
+.dolor_sit_amet {
+  background-color: #B9D9EA;
+}
+
+.nulla_pariatur {
+  background-color: #A5CEE5;
+}
+
+.adipis_velit {
+  background-color: #91C3DF;
+}
+
+.color_newsletter {
+  background-color: #A5CEE5;
+  color: #FFFFFF;
+}
+
+.titre_newsletter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #7DB8D9;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  background-image: url("img/new-mountains_content.png");
+  background-size: cover;
+  background-color: #C8E2F1;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-bottom: 41.25%;
+}
+
+.slider {
+  width: 70vw;
+  height: 100px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 8s linear infinite;
+}
+
+.slide img {
+  height: 70px;
+  padding: 0 30px 0 30px;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.slider::before, .slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/*# sourceMappingURL=style.css.map */
